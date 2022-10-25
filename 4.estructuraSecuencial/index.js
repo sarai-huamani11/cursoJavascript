@@ -1,0 +1,1 @@
+// la estructura secuencial es cuando en un problema sólo participan operaciones, entradas y salidas (sigue a otra en secuencia).
