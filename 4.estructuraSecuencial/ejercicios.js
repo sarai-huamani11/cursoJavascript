@@ -5,3 +5,4 @@
   let total = ("precio")*("cantidad")
  console.log((precio*cantidad))
 //
+""
