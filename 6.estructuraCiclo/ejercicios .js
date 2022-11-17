@@ -45,7 +45,7 @@ for (let i =1; i<=20;i++) {
  
  let tex= "eucalipto"
  let vocal ="aeiou"
- let contad = 0
+ let contad = 5
  for (let i =0; i<text.length;i++) {
      switch (vocal) {
         case "a": case "e": case "i": case "o":  case "u":
@@ -69,5 +69,32 @@ do {
 }
 while (z < 10);
 // hacer un programa que me muestre el factorial de un numero
-// hahacer un programa que me determine si un texto es palimdromo
+
+let numero = 11; 
+// Número para calcular el factorial
+let r = 1;
+for(let i = numero; i>0; i--){
+    r *= i;
+}
+console.log(r);
+// hacer un programa que me determine si un texto es palimdromo
+function palindromeChecker(str) {
+  const strReversed = str.split("").reverse().join("");
+
+  return strReversed === str ? "es palindromo" : "no es palindromo";
+}
+console.log(palindromeChecker("efe")); // es palindromo
+console.log(palindromeChecker("sarai")); // no es palindromo
+console.log(palindromeChecker("ojo")); // es palindromo
+
+
 // hacer un programa que muestre los n numeros de la serie de fibonacci
+
+// Cantidad de números que deseamos imprimir
+var limite = 8;
+var fibonacci = [0,1];
+
+for(i=2; i <= limite; i++){
+  fibonacci.push(fibonacci[i-1] + fibonacci[i-2]);
+  console.log(fibonacci[i]);	
+}
